@@ -1,0 +1,41 @@
+$white: rgb(229, 244, 255);
+$black: rgb(0, 0, 15);
+$green: #0fe57a;
+$blue: #058cd9;
+
+#root {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	background-color: $white;
+	text-align: center;
+}
+
+.quizes {
+	width: 100%;
+	height: 100%;
+	background-color: $white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+
+	& > button {
+		padding: 10px;
+		font-size: 18px;
+		color: $white;
+		background-image: linear-gradient(90deg, $green, $blue);
+		border: none;
+		border-radius: 10px;
+		outline: none;
+		cursor: pointer;
+	}
+
+	&.hidden {
+		display: none;
+	}
+}
